@@ -3,18 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\mahasiswa;
 
-class mahasiswaController extends Controller
-{                    
+class termController extends Controller
+{
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $mahasiswas = mahasiswa::all();
-        // with ('nama variabel di view yang akan menangkap variabel yg akan dikirim', variabel yang akan dikirim ke view mahasiswa);
-        return view('mahasiswa')->with('mahasiswas',$mahasiswas);
         //
     }
 
