@@ -2,10 +2,12 @@
 use App\Models\mahasiswa;
 ?>
 
-@extends('layouts.app')
+@extends('layouts.app2')
+@section('br1','Selamat Datang')
+@section('br2','Selamat Datang')
 
 @section('title','Mahasiswa')
-    
+
 @section('content')
     
     
@@ -14,7 +16,7 @@ use App\Models\mahasiswa;
     </div>
 
     <div>
-        <table class="table table-bordered">
+        <table class="table table-bordered table-hover">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
