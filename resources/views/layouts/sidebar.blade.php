@@ -63,6 +63,24 @@
                   <p>Mata Kuliah</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="/programstudi" class="nav-link">
+                  <i class="nav-icon fas fa-folder-open"></i>
+                  <p>Program Studi</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/pembayaran" class="nav-link">
+                  <i class="nav-icon fas fa-folder-open"></i>
+                  <p>Pembayaran</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/jadwalkuliah" class="nav-link">
+                  <i class="nav-icon fas fa-folder-open"></i>
+                  <p>Jadwal Kuliah</p>
+                </a>
+              </li>
          
         </ul>
       </nav>

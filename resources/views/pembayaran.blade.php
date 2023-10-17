@@ -1,18 +1,18 @@
 <?php 
-use App\Models\matakuliah;
+use App\Models\Pembayaran;
 ?>
 
 @extends('layouts.app2')
 @section('br1','Selamat Datang')
 @section('br2','Selamat Datang')
 
-@section('title','Mata Kuliah')
+@section('title','Pembayaran')
     
 @section('content')
     
     
     <div>
-        <h1 style="text-align: center">DATA MATA KULIAH</h1>
+        <h1 style="text-align: center">DATA PEMBAYARAN</h1>
     </div>
 
     <div>
@@ -20,21 +20,23 @@ use App\Models\matakuliah;
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Kode Mata Kuliah</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">SKS</th>
+                    <th scope="col">StudentID</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Payment Date</th>
+                    <th scope="col">Payment Method</th>
                 </tr>
             </thead>
 
             <tbody>
                 <tr>
                     
-                        @foreach ($matakuliahs as $matakuliah ) 
+                        @foreach ($pembayarans as $pembayaran ) 
                              <tr>
-                                 <td> {{$matakuliah->id}} </td>
-                                 <td> {{$matakuliah->kode_mataKuliah}} </td>
-                                 <td> {{$matakuliah->nama_mataKuliah}} </td>
-                                 <td> {{$matakuliah->sks}} </td>
+                                 <td> {{$pembayaran->id}} </td>
+                                 <td> {{$pembayaran->studentID}} </td>
+                                 <td> {{$pembayaran->Amount}} </td>
+                                 <td> {{$pembayaran->Payment_date}} </td>
+                                 <td> {{$pembayaran->Payment_method}} </td>
                              </tr>
                             
                         @endforeach

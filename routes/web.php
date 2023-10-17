@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\mahasiswaController;
 use App\Http\Controllers\mataKuliahController;
+use App\Http\Controllers\programStudiController;
+use App\Http\Controllers\pembayaranController;
+use App\Http\Controllers\jadwalKuliahController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +35,9 @@ Route::get('/mahasiswa', [mahasiswaController::class, 'index']);
 //});
 
 Route::get('/matakuliah', [mataKuliahController::class, 'index']);
+
+Route::get('/programstudi', [programStudiController::class, 'index']);
+
+Route::get('/pembayaran', [pembayaranController::class, 'index']);
+
+Route::get('/jadwalkuliah', [jadwalKuliahController::class, 'index']);

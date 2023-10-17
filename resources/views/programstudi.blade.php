@@ -1,18 +1,18 @@
 <?php 
-use App\Models\matakuliah;
+use App\Models\ProgramStudi;
 ?>
 
 @extends('layouts.app2')
 @section('br1','Selamat Datang')
 @section('br2','Selamat Datang')
 
-@section('title','Mata Kuliah')
+@section('title','Program Studi')
     
 @section('content')
     
     
     <div>
-        <h1 style="text-align: center">DATA MATA KULIAH</h1>
+        <h1 style="text-align: center">DATA PROGRAM STUDI</h1>
     </div>
 
     <div>
@@ -20,21 +20,19 @@ use App\Models\matakuliah;
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Kode Mata Kuliah</th>
                     <th scope="col">Nama</th>
-                    <th scope="col">SKS</th>
+                    <th scope="col">Deskripsi</th>
                 </tr>
             </thead>
 
             <tbody>
                 <tr>
                     
-                        @foreach ($matakuliahs as $matakuliah ) 
+                        @foreach ($programstudis as $programstudi ) 
                              <tr>
-                                 <td> {{$matakuliah->id}} </td>
-                                 <td> {{$matakuliah->kode_mataKuliah}} </td>
-                                 <td> {{$matakuliah->nama_mataKuliah}} </td>
-                                 <td> {{$matakuliah->sks}} </td>
+                                 <td> {{$programstudi->id}} </td>
+                                 <td> {{$programstudi->Nama}} </td>
+                                 <td> {{$programstudi->Deskripsi}} </td>
                              </tr>
                             
                         @endforeach
