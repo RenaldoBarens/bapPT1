@@ -16,9 +16,31 @@ class taskSeeder extends Seeder
     {
         //
         DB::table('matakuliahs')->insert([
-            ['kode_matakuliah'=>'MK001',
-             'nama_matakuliah'=>'Pemrograman Aplikasi Bisnis',
-             'sks'=>4]
+            [
+                'kode_matakuliah'=>'MK001',
+                'nama_matakuliah'=>'Pemrograman Aplikasi Bisnis',
+                'sks'=>4
+            ],
+            [
+                'kode_matakuliah'=>'MK002',
+                'nama_matakuliah'=>'Digital Marketing',
+                'sks'=>3
+            ],
+            [
+                'kode_matakuliah'=>'MK003',
+                'nama_matakuliah'=>'Matematika',
+                'sks'=>4
+            ],
+            [
+                'kode_matakuliah'=>'MK004',
+                'nama_matakuliah'=>'Manajemen Strategis',
+                'sks'=>3
+            ],
+            [
+                'kode_matakuliah'=>'MK005',
+                'nama_matakuliah'=>'Agama Dunia',
+                'sks'=>4
+            ]
         ]);
 
         $faker = Faker::create('id_ID');
